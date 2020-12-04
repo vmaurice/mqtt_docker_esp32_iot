@@ -25,7 +25,7 @@ const char* ssid     = "SSID";
 const char* password = "PASSWORD";
 
 // Please input IP device of mqtt_server
-const char* mqtt_server = "IP_OF_SERVET";
+const char* mqtt_server = "IP_OF_SERVER";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
