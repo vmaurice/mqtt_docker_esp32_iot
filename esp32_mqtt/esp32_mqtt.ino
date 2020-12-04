@@ -102,6 +102,26 @@ float getTemperature() {
 
 
 void loop() {
+
+  if (WiFi.status() != WL_CONNECTED) {
+    Serial.println("WIFI not coonnected");
+    WiFi.begin(ssid, password);
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(2000);
+        Serial.print(".");
+    }
+    while (!client.connected()) {
+      Serial.println("Connecting to MQTT...");
+      if (client.connect("ESP32Client")) {
+        Serial.println("connected");
+      } else {
+        Serial.print("failed with state ");
+        Serial.print(client.state());
+        delay(2000);
+      }
+    }
+    
+  }
   
   
   temperature = getTemperature();  

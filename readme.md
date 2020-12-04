@@ -6,6 +6,8 @@ An ESP32 is used with two I2C sensors : a temperature sensor (MCP9808) and a lig
 
 He publishes in " sensors/kerno/bedroom/temperature " and " sensors/kerno/bedroom/luminosity " in JSON format. The data is saved in InfluxDB v1.8 (local database) and InfluxDB v2 (cloud database). Both databases can be visualized in Grafana.
 
+Run in Mac OS and Raspberry pi OS.
+
 <p align="center">
     <img  src="esp32.jpg" alt="Esp32 with sensors">
 </p>
@@ -22,4 +24,4 @@ He publishes in " sensors/kerno/bedroom/temperature " and " sensors/kerno/bedroo
 docker exec -it influxdb influx
 ```
 
-don't forget to allow the path in docker.
+MAC OS :don't forget to allow the path in docker.
