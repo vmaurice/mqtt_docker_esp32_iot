@@ -9,7 +9,11 @@ He publishes in " sensors/kerno/bedroom/temperature " and " sensors/kerno/bedroo
 Run in Mac OS and Raspberry pi OS.
 
 <p align="center">
-    <img  src="esp32.jpg" alt="Esp32 with sensors">
+    <img  src="ressources/esp32-v2-2.jpg" alt="Esp32 version 2 with sensors">
+</p>
+
+<p align="center">
+    <img  src="ressources/grafana.png" alt="Grafana">
 </p>
 
 ## Command to run service
@@ -25,3 +29,11 @@ docker exec -it influxdb influx
 ```
 
 MAC OS :don't forget to allow the path in docker.
+
+<p align="center">
+    <img  src="ressources/esp32-v2.jpg" alt="Esp32 version 2 with sensors">
+</p>
+
+<p align="center">
+    <img  src="ressources/esp32.jpg" alt="Esp32 version 1 with sensors">
+</p>
