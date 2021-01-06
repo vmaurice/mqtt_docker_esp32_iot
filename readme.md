@@ -8,6 +8,8 @@ He publishes in " sensors/kerno/bedroom/temperature " and " sensors/kerno/bedroo
 
 Run in Mac OS and Raspberry pi OS.
 
+You can get the value of the esp32 sensors with control.py file into python folder. For example ./control.py -d : get if the door is opened or closed. More information with ./control.py -h.
+
 <p align="center">
     <img  src="ressources/esp32-v2-2.jpg" alt="Esp32 version 2 with sensors">
 </p>
