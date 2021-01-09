@@ -32,10 +32,16 @@ docker exec -it influxdb influx
 
 MAC OS :don't forget to allow the path in docker.
 
+### Version 2 :
+
 <p align="center">
     <img  src="ressources/esp32-v2.jpg" alt="Esp32 version 2 with sensors">
 </p>
 
+### Version 1 :
+
 <p align="center">
     <img  src="ressources/esp32.jpg" alt="Esp32 version 1 with sensors">
 </p>
+
+

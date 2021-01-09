@@ -119,11 +119,6 @@ void callback(char* topic, byte* message, unsigned int length) {
   }
   Serial.println();
 
-  // Feel free to add more if statements to control more GPIOs with MQTT
-
-  // If a message is received on the topic esp32/output, you check if the message is either "on" or "off". 
-  // Changes the output state according to the message
-
   char buff[256];
   String txt = "";
   
@@ -204,7 +199,6 @@ void loop() {
   
   char buff[256];
 
-  // replace the following line with your data sent to Azure IoTHub
   String txt = "{\"value\":" + (String)temperature + ", \"unit\":\"Celsus\" }";
   snprintf(buff, 256, txt.c_str());
   
